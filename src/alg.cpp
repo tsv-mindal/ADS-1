@@ -6,9 +6,9 @@ int cbinsearch(int *arr, int size, int value) {
   int point = 0;
   while (s > point) {
     int x = (s + point) / 2;
-    if (arr[x] < value) 
+    if (arr[x] < value)
       point = x + 1;
-    else 
+    else
       s = x;
   }
   if (arr[point] == value) {
@@ -17,7 +17,7 @@ int cbinsearch(int *arr, int size, int value) {
       point++;
     }
   }
-  if (g) 
+  if (g)
     return g;
   else
     return 0;
