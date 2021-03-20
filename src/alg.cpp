@@ -7,18 +7,18 @@ int cbinsearch(int *arr, int size, int value) {
   while (s > point) {    
     int x = (s + point) / 2;
     if (arr[x] < value)
-    point = x + 1;
+      point = x + 1;
     else
-    s = x;  
-    }
+      s = x;  
+  }
   if (arr[point] == value) {
     while (arr[point] == value) {     
       g++;
       point++;    
       }
-    }
+  }
   if (g)
   return g;
   else
   return 0; // если ничего не найдено  
-  }
+}
